@@ -24,3 +24,26 @@ mass.sort(reverse = True)
 print(mass)
 
 # Задание 5
+nums_0 = []
+nums_plus = []
+nums_minus = []
+sum = 0
+nums_col = int(input("Введи количество чисел: "))
+for i in range(nums_col):
+    i += 1
+    num = int(input(f"Введи {i} число: "))
+    if num < 0:
+        nums_minus.append(num)
+        sum += num
+    elif num == 0:
+        nums_0.append("*")
+    elif num > 0:
+        nums_plus.append(num)
+
+sr_arif = sum / len(nums_minus)
+print(f"Кол-во звёзд {len(nums_0)}: {nums_0}")
+print(nums_0)
+print(nums_plus)
+print(nums_minus)
+print(sum)
+print(sr_arif)
