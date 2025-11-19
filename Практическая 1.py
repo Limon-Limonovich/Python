@@ -27,23 +27,24 @@ print(mass)
 nums_0 = []
 nums_plus = []
 nums_minus = []
-sum = 0
+sum1 = 0
+sum2 = 0
 nums_col = int(input("Введи количество чисел: "))
 for i in range(nums_col):
     i += 1
     num = int(input(f"Введи {i} число: "))
     if num < 0:
         nums_minus.append(num)
-        sum += num
+        sum1 += num
     elif num == 0:
         nums_0.append("*")
     elif num > 0:
         nums_plus.append(num)
-
-sr_arif = sum / len(nums_minus)
+        sum2 += num
+sr_arif = sum2 / len(nums_plus)
 print(f"Кол-во звёзд {len(nums_0)}: {nums_0}")
 print(nums_0)
 print(nums_plus)
 print(nums_minus)
-print(sum)
+print(sum1)
 print(sr_arif)
