@@ -24,3 +24,11 @@ print(answer_matrix)
 for row2 in answer_matrix:
     print(f"Сумма чисел в списке: {sum(row2)}")
 # Задание 3
+fruits = [['Banana', 'apple'], ['apricot', 'Avocado'], ['lime', 'lemon'], ['Mango', 'grapes']]
+big_fruits = []
+for row in fruits:
+    for el in row:
+        if el[0].isupper():
+            big_fruits.append(el)
+print(big_fruits)
+# Задание 4
