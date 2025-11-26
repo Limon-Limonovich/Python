@@ -41,3 +41,15 @@ for row in random_elements:
         if index % 2 == 0:
             print(f"Индекс: {index}; Элемент: {el}")
 # Задание 5
+col_str = int(input("Введите количество строк: "))
+col_stolb = int(input("Введите количество столбцов: "))
+matrix = []
+for i in range(col_str):
+    znach_str = []
+    for j in range(col_stolb):
+        vvod = int(input(f"Введи Значение элемента [{i}][{j}]: \n"))
+        znach_str.append(vvod)
+    matrix.append(znach_str)
+print(f"\nТвой двумерный массив: ")
+for znach_str in matrix:
+    print(znach_str)
