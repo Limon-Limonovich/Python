@@ -32,3 +32,12 @@ for row in fruits:
             big_fruits.append(el)
 print(big_fruits)
 # Задание 4
+random_elements = [['toy', 'bee', 'cheese', 'ear'],
+                   [False, 'word', '0110110', 10],
+                   ['happiness', '(」°ロ°)」', 'luck', None],
+                   ['car', '<- code ->', 4.7, True]]
+for row in random_elements:
+    for index, el in enumerate(row, start = 1):
+        if index % 2 == 0:
+            print(f"Индекс: {index}; Элемент: {el}")
+# Задание 5
