@@ -23,6 +23,7 @@ for row in range(len(matrix_1)):
 print(answer_matrix)
 for row2 in answer_matrix:
     print(f"Сумма чисел в списке: {sum(row2)}")
+    
 # Задание 3
 fruits = [['Banana', 'apple'], ['apricot', 'Avocado'], ['lime', 'lemon'], ['Mango', 'grapes']]
 big_fruits = []
@@ -31,6 +32,7 @@ for row in fruits:
         if el[0].isupper():
             big_fruits.append(el)
 print(big_fruits)
+
 # Задание 4
 random_elements = [['toy', 'bee', 'cheese', 'ear'],
                    [False, 'word', '0110110', 10],
@@ -40,6 +42,7 @@ for row in random_elements:
     for index, el in enumerate(row, start = 1):
         if index % 2 == 0:
             print(f"Индекс: {index}; Элемент: {el}")
+            
 # Задание 5
 col_str = int(input("Введите количество строк: "))
 col_stolb = int(input("Введите количество столбцов: "))
