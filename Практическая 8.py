@@ -13,3 +13,22 @@ v = input("Введи значение для ключа")
 k = input("Введи название ключа")
 sl[k] = [v]
 print(sl)
+
+# Задание 3
+my_dict = {}
+
+while len(my_dict) < 3:
+    
+    while True:
+        key = input("Введите ключ:")
+        value = input("Введите значение:")
+        my_dict[key] = value
+        print(f"Добавлено: {key}: {value}")
+print(my_dict)
+
+# Задание 4
+all_d = {1:15, 4:80, 44:0, 256:15, 100:70, 101:70, 20:44, 3:9}
+del all_d[1]
+del all_d[101]
+del all_d[3]
+print(all_d)
